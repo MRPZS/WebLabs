@@ -34,3 +34,14 @@ echo "\n";
 
 //12
 echo 8**2, "\n";
+
+//13
+$my_num = 3.14;
+$answer = $my_num;
+$answer += 2;
+$answer *= 2;
+$answer -= 2;
+$answer /= 2;
+$answer -= $my_num;
+echo $answer;
+echo "\n";
