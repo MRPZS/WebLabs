@@ -18,3 +18,7 @@ echo "$float";
 echo "\n";
 $sum = $variable + 11;
 echo $sum;
+echo "\n";
+$last_month = 1187.23;
+$this_month = 1089.98;
+echo $this_month - $last_month;
