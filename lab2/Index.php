@@ -27,7 +27,10 @@ echo "\n";
 //11
 $num_languages = 4;
 $months = 11;
-$days = $month * 16;
+$days = $months * 16;
 $days_per_language = $days / $num_languages;
 echo $days_per_language;
 echo "\n";
+
+//12
+echo 8**2, "\n";
