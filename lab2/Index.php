@@ -67,5 +67,14 @@ $sum = 0;
 foreach ($arr as $var) {
     $sum += $var ** 2;
 }
+$root = sqrt($sum);
+echo "\n", $root;
+
+echo "\n", round(sqrt(379));
+echo "\n", round(sqrt(379, 1));
+echo "\n", round(sqrt(379, 2));
+
+$root = sqrt(587);
+$round =  Array('floor' => floor($root),  'ceil' => ceil($root));
 
 
