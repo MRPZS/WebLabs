@@ -15,3 +15,6 @@ echo "$variable";
 echo "\n";
 $float = 0.1;
 echo "$float";
+echo "\n";
+$sum = $variable + 11;
+echo $sum;
