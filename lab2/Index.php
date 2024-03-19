@@ -77,4 +77,14 @@ echo "\n", round(sqrt(379, 2));
 $root = sqrt(587);
 $round =  Array('floor' => floor($root),  'ceil' => ceil($root));
 
+$arr = [4, -2, 5, 19, -130, 0, 10];
+$mini = min($arr);
+$maxi = max($arr);
+
+echo "\n", rand(1, 100);
+$arr = [];
+for($i = 0; $i <= 9; $i++) {
+    $ar[] = rand(1, 100);
+}
+
 
