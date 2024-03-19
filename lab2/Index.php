@@ -22,3 +22,7 @@ echo "\n";
 $last_month = 1187.23;
 $this_month = 1089.98;
 echo $this_month - $last_month;
+
+//11
+$num_languages = 4;
+$months = 11;
