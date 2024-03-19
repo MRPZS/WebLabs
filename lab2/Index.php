@@ -23,6 +23,10 @@ $last_month = 1187.23;
 $this_month = 1089.98;
 echo $this_month - $last_month;
 echo "\n";
+if ($mod == 0)
+    echo "Делится";
+else
+    echo "Делится с остатком. Остаток: ", $mod;
 
 //11
 $num_languages = 4;
