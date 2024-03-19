@@ -22,7 +22,12 @@ echo "\n";
 $last_month = 1187.23;
 $this_month = 1089.98;
 echo $this_month - $last_month;
+echo "\n";
 
 //11
 $num_languages = 4;
 $months = 11;
+$days = $month * 16;
+$days_per_language = $days / $num_languages;
+echo $days_per_language;
+echo "\n";
