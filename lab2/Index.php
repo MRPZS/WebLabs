@@ -13,3 +13,5 @@
 $variable = 1;
 echo "$variable";
 echo "\n";
+$float = 0.1;
+echo "$float";
