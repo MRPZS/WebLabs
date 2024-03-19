@@ -50,11 +50,22 @@ echo "\n";
 $a = 10;
 $b = 3;
 $mod = $a % $b;
+
 if ($mod == 0)
     echo "Делится";
 else
     echo "Делится с остатком. Остаток: ", $mod;
-echo "\n";
+
 $p = pow(2,10);
 echo "\n", $p;
+
+$s = sqrt(245);
+echo "\n", $s;
+
+$arr = [4, 2, 5, 19, 13, 0, 10];
+$sum = 0;
+foreach ($arr as $var) {
+    $sum += $var ** 2;
+}
+
 
