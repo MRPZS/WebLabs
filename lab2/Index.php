@@ -45,3 +45,10 @@ $answer /= 2;
 $answer -= $my_num;
 echo $answer;
 echo "\n";
+
+//14
+$a = 10;
+$b = 3;
+$mod = $a % $b;
+
+
