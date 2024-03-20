@@ -78,13 +78,47 @@ $root = sqrt(587);
 $round =  Array('floor' => floor($root),  'ceil' => ceil($root));
 
 $arr = [4, -2, 5, 19, -130, 0, 10];
-$mini = min($arr);
-$maxi = max($arr);
+$minElem = min($arr);
+$maxElem = max($arr);
 
 echo "\n", rand(1, 100);
+echo "\n";
+
 $arr = [];
-for($i = 0; $i <= 9; $i++) {
-    $ar[] = rand(1, 100);
+for ($i = 0; $i < 10; $i++) {
+     $arr[$i] = rand(1, 100);
+     echo $arr[$i], ", ";
 }
 
 
+$a = 1;
+$b = 100;
+echo "\n", "Модуль разности равен: ", abs($a - $b);
+echo "\n";
+
+$arr = [1, 2, -1, -2, 3, -3];
+for ($i = 0; $i < 6; $i++) {
+     $arr[$i] = abs($arr[$i]);
+     echo $arr[$i], ", ";
+}
+echo "\n";
+
+<?php
+$num = 30;
+$arrDiv = [];
+for ($i = 1; $i <= $num / 2 + 1; $i++) {
+     if (0 === $num % $i ) {
+         $arrDiv[$i] = $i;
+         echo $i;
+    }  
+}
+echo "\n";
+
+$arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+$sum = 0;
+$i = 0;
+while ($sum <= 10) {
+       $sum += $arr[$i];
+       $i += 1;
+}
+echo $i;
