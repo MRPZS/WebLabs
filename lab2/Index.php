@@ -134,7 +134,6 @@ echo "\n", $my_num;
 echo "\n";
 
 //16
-<?php
 function increaseEnthusiasm($string)
 {
     $string .= "!";
@@ -154,3 +153,31 @@ function cut($string, $len = 10) {
     return substr($string, 0, $len);
 }
 echo cut("HaHaHaHaHaA");
+
+$arr = [1, 2, 3, 4];
+function recursiveOutput($arr, $i = 0) {
+	echo"\n", $arr[$i];
+    if ($i + 1 != sizeof($arr)){
+        recursiveOutput($arr, $i + 1);}
+}
+recursiveOutput($arr);
+
+function sumOfDigits($var){
+    $sum = 0;
+    while (0 < $var)
+    {
+        $sum += $var % 10;
+        $var = (int)($var / 10);
+    }
+    if (9 < $sum)
+    {
+        return sumOfDigits($sum);
+    }
+    return $sum;
+}
+$x = sumOfDigits(156);
+echo "\n",$x;
+echo "\n";
+
+//17
+
