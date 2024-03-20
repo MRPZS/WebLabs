@@ -78,8 +78,8 @@ $root = sqrt(587);
 $round =  Array('floor' => floor($root),  'ceil' => ceil($root));
 
 $arr = [4, -2, 5, 19, -130, 0, 10];
-$minElem = min($arr);
-$maxElem = max($arr);
+$min = min($arr);
+$max = max($arr);
 
 echo "\n", rand(1, 100);
 echo "\n";
@@ -103,9 +103,8 @@ for ($i = 0; $i < 6; $i++) {
 }
 echo "\n";
 
-<?php
 $num = 30;
-$arrDiv = [];
+$arr = [];
 for ($i = 1; $i <= $num / 2 + 1; $i++) {
      if (0 === $num % $i ) {
          $arrDiv[$i] = $i;
@@ -122,3 +121,15 @@ while ($sum <= 10) {
        $i += 1;
 }
 echo $i;
+echo "\n";
+
+//15
+function printStringReturnNumber($string)
+{
+    echo $string;
+    return 15;
+}
+$my_num = printStringReturnNumber("some string");
+echo "\n", $my_num;
+
+//16
