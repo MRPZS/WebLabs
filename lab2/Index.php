@@ -131,5 +131,14 @@ function printStringReturnNumber($string)
 }
 $my_num = printStringReturnNumber("some string");
 echo "\n", $my_num;
+echo "\n";
 
 //16
+<?php
+function increaseEnthusiasm($string)
+{
+    $string .= "!";
+    return $string;
+}
+$my_str = increaseEnthusiasm("im so lazy");
+echo $my_str;
