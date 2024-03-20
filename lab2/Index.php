@@ -142,3 +142,15 @@ function increaseEnthusiasm($string)
 }
 $my_str = increaseEnthusiasm("im so lazy");
 echo $my_str;
+
+function repeatThreeTimes($string) {
+    return $string . $string. $string;
+}
+echo "\n", repeatThreeTimes("Nothing");
+echo "\n", increaseEnthusiasm(repeatThreeTimes("Nothing"));
+echo "\n";
+
+function cut($string, $len = 10) {
+    return substr($string, 0, $len);
+}
+echo cut("HaHaHaHaHaA");
