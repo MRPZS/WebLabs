@@ -197,3 +197,16 @@ function arrayFill(string $str, int $num): array
 }
 echo "<br />";
 foreach (arrayFill("x", 10) as $value) echo "$value ";
+
+$DoubleArray = [[1, 2, 3], [4, 5], [6]]; //sum 2d array
+function sumOfArray(array $arr): int
+{
+    $sum = 0;
+    foreach ($arr as $subArray) {
+        foreach ($subArray as $value) {
+            $sum += $value;
+        }
+    }
+    return $sum;
+}
+echo "<br />Сумма чисел в двумерном массиве: " . sumOfArray($DoubleArray);
