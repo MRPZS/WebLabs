@@ -236,3 +236,23 @@ echo "\n", "Количество элементов: " . count($arr);
 echo "\n", "Последний элемент: " . end($arr);
 echo "\n", "Предпоследний: " . prev($arr);
 echo "\n";
+
+//18
+function sum10(int $a, int $b): bool
+{
+    if ($a + $b > 10)
+    {
+        return True;
+    }
+    else return False;
+}
+
+function Equ(int $a, int $b): bool
+{
+    if ($a == $b)
+    {
+        return True;
+    }
+    else return False;
+}
+
