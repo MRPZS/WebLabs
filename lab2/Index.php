@@ -190,3 +190,10 @@ function X(string $str, int $num): array //arr x xx xxx xxx etc.
 }	
 echo "<br />";
 foreach (x("x", 5) as $value) echo "$value ";
+
+function arrayFill(string $str, int $num): array 
+{
+    return str_split(str_repeat($str, $num), strlen($str));
+}
+echo "<br />";
+foreach (arrayFill("x", 10) as $value) echo "$value ";
