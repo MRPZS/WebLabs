@@ -247,7 +247,7 @@ function sum10(int $a, int $b): bool
     else return False;
 }
 
-function Equ(int $a, int $b): bool
+function equ(int $a, int $b): bool
 {
     if ($a == $b)
     {
@@ -256,3 +256,20 @@ function Equ(int $a, int $b): bool
     else return False;
 }
 
+$test = 1;
+if ($test == 0) echo 'Верно';
+
+$age = 18;
+if ($age < 10 || $age > 99)
+{
+    echo "<br />Возраст <10 или >99. Лего Вам не собрать. ";
+}
+else
+{
+    $sum = array_sum(str_split($age));
+    if ($sum <= 9)
+    {
+        echo "<br />Сумма цифр однозначна. ";
+    }
+    else echo "<br />Сумма цифр двузначна. ";
+}
