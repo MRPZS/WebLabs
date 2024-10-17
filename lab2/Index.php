@@ -210,3 +210,11 @@ function sumOfArray(array $arr): int
     return $sum;
 }
 echo "<br />Сумма чисел в двумерном массиве: " . sumOfArray($DoubleArray);
+
+$2dArr = []; 
+$Count = 1;
+for ($i = 0; $i < 3; $i++) {
+    for ($j = 0; $j < 3; $j++) {
+        $2dArr[$i][$j] = $Count++;
+    }
+}
