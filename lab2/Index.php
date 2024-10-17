@@ -222,3 +222,7 @@ for ($i = 0; $i < 3; $i++) {
 $Array = [2, 5, 3, 9]; 
 $result = $Array[0] * $Array[1] + $Array[2] * $Array[3];
 echo "\n", "Итоговое значение: ", $result;
+
+$user = ["name" => "Мызников", "surname" => "Илья", "patronymic" => "Олегович"];
+echo "\n";
+echo $user["name"] . ' ' . $user["surname"] . ' ' . $user["patronymic"] . ' ';
