@@ -227,6 +227,12 @@ $user = ["name" => "Ilya", "surname" => "Myznikov", "patronymic" => "Olegovich"]
 echo "\n";
 echo $user["name"] . ' ' . $user["surname"] . ' ' . $user["patronymic"] . ' ';
 
-$date = ["year" => "2002", "month" => "November", "day" => "29"];
+$date = ["year" => "2024", "month" => "Octember", "day" => "18"];
 echo "\n";
 echo $date["year"] . ' ' . $date["month"] . ' ' . $date["day"] . ' ';
+
+$arr = ['a', 'b', 'c', 'd', 'e'];
+echo "\n", "Количество элементов: " . count($arr);
+echo "\n", "Последний элемент: " . end($arr);
+echo "\n", "Предпоследний: " . prev($arr);
+echo "\n";
