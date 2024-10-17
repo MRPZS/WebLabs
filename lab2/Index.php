@@ -180,4 +180,13 @@ echo "\n",$x;
 echo "\n";
 
 //17
-
+function X(string $str, int $num): array //arr x xx xxx xxx etc.
+{
+    $arr = [];
+    for ($i = 1; $i <= $num; $i++) {
+        $arr[$i] = str_repeat($str, $i);
+    }
+    return $arr;
+}	
+echo "<br />";
+foreach (x("x", 5) as $value) echo "$value ";
