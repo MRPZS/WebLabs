@@ -188,14 +188,14 @@ function X(string $str, int $num): array //arr x xx xxx xxx etc.
     }
     return $arr;
 }	
-echo "<br />";
+echo "\n";
 foreach (x("x", 5) as $value) echo "$value ";
 
 function arrayFill(string $str, int $num): array 
 {
     return str_split(str_repeat($str, $num), strlen($str));
 }
-echo "<br />";
+echo "\n";
 foreach (arrayFill("x", 10) as $value) echo "$value ";
 
 $DoubleArray = [[1, 2, 3], [4, 5], [6]]; //sum 2d array
@@ -218,3 +218,7 @@ for ($i = 0; $i < 3; $i++) {
         $2dArr[$i][$j] = $Count++;
     }
 }
+
+$Array = [2, 5, 3, 9]; 
+$result = $Array[0] * $Array[1] + $Array[2] * $Array[3];
+echo "\n", "Итоговое значение: ", $result;
