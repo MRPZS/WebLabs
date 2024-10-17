@@ -223,6 +223,10 @@ $Array = [2, 5, 3, 9];
 $result = $Array[0] * $Array[1] + $Array[2] * $Array[3];
 echo "\n", "Итоговое значение: ", $result;
 
-$user = ["name" => "Мызников", "surname" => "Илья", "patronymic" => "Олегович"];
+$user = ["name" => "Ilya", "surname" => "Myznikov", "patronymic" => "Olegovich"];
 echo "\n";
 echo $user["name"] . ' ' . $user["surname"] . ' ' . $user["patronymic"] . ' ';
+
+$date = ["year" => "2002", "month" => "November", "day" => "29"];
+echo "\n";
+echo $date["year"] . ' ' . $date["month"] . ' ' . $date["day"] . ' ';
