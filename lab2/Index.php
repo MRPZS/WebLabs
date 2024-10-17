@@ -273,3 +273,9 @@ else
     }
     else echo "<br />Сумма цифр двузначна. ";
 }
+
+$arr = [23, 48, 69];
+if (count($arr) == 3) {
+    $sum = array_sum($arr);
+    echo "<br />Сумма эл-тов: $sum";
+}
