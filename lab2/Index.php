@@ -262,20 +262,33 @@ if ($test == 0) echo 'Верно';
 $age = 18;
 if ($age < 10 || $age > 99)
 {
-    echo "<br />Возраст <10 или >99. Лего Вам не собрать. ";
+    echo "\n", "Возраст <10 или >99. Лего Вам не собрать. ";
 }
 else
 {
     $sum = array_sum(str_split($age));
     if ($sum <= 9)
     {
-        echo "<br />Сумма цифр однозначна. ";
+        echo "\n", "Сумма цифр однозначна. ";
     }
-    else echo "<br />Сумма цифр двузначна. ";
+    else echo "\n", "Сумма цифр двузначна. ";
 }
 
 $arr = [23, 48, 69];
 if (count($arr) == 3) {
     $sum = array_sum($arr);
-    echo "<br />Сумма эл-тов: $sum";
+    echo "\n", "Сумма эл-тов: $sum";
 }
+
+//task 19
+function Triangle(): void // x xx xxx xxx pyramid
+{
+    $str = 'x';
+    $num = 20;
+    $arr = [];
+    for ($i = 1; $i <= $num; $i++) {
+        $arr[$i] = str_repeat($str, $i);
+        echo "\n" , $arr[$i];
+    }
+}
+Triangle();
