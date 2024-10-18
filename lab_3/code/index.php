@@ -29,10 +29,22 @@
     <div id="table">
         <table>
             <thead>
+            <th>Category</th>
             <th>Title</th>
             <th>Description</th>
             </thead>
-            <tbody></tbody>
+            <tbody>
+                <tr>
+                    <td>other</td>
+                    <td>phone</td>
+                    <td>etc</td>
+                </tr>
+                <tr>
+                    <td>carsr</td>
+                    <td>bmw</td>
+                    <td>lada</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </body>
