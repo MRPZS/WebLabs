@@ -292,3 +292,12 @@ function Triangle(): void // x xx xxx xxx pyramid
     }
 }
 Triangle();
+
+//task 20
+$arr = [21, 23, 69, 45, 56];
+$avg = array_sum($arr) / count($arr);
+echo "\n", "Среднее арифметическое: $avg";
+
+$number = 100;
+$sum = $number * 50 + 50;
+echo "\n", "Сумма чисел: $sum";
