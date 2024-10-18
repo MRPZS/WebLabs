@@ -301,3 +301,8 @@ echo "\n", "Среднее арифметическое: $avg";
 $number = 100;
 $sum = $number * 50 + 50;
 echo "\n", "Сумма чисел: $sum";
+
+$arr = [4, 9, 16, 25, 36, 49, 64, 81];
+$res = array_map('sqrt', $arr);
+echo "<br />Массив с корнями: ";
+foreach($res as $value) echo "$value ";
