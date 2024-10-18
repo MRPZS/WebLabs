@@ -9,7 +9,9 @@
 </head>
 <body>
     <form action="save.php" method="post">
+        <label for="email">Email</label>
         <input type="email" name="email" required>
+        <label for="category">Category</label>
         <select name="category" required>
             <option>Cars</option>
             <option>Other</option>
