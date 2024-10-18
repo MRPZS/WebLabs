@@ -21,6 +21,8 @@
 
         <label for="description">Description</label>
         <textarea rows="3" name="description"></textarea>
+
+        <input type="submit" value="save">
     </form>
 </body>
 </html>
