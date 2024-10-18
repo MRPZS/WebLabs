@@ -304,9 +304,12 @@ echo "\n", "Сумма чисел: $sum";
 
 $arr = [4, 9, 16, 25, 36, 49, 64, 81];
 $res = array_map('sqrt', $arr);
-echo "<br />Массив с корнями: ";
+echo "\n", "Массив с корнями: ";
 foreach($res as $value) echo "$value ";
 
-$ar = array_combine(range('a', 'z'), range(1, 26));
-echo "<br />Буква-номер: ";
-foreach ($ar as $letter => $num) echo "<br />$letter - $num";;
+$arr = array_combine(range('a', 'z'), range(1, 26));
+echo "\n", "Буква-номер: ";
+foreach ($arr as $letter => $num) echo "<br />$letter - $num";;
+
+$string = '1234567890';
+echo "<br />Сумма пар: " . array_sum(str_split($string, 2));
