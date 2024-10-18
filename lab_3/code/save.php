@@ -1,7 +1,13 @@
 <?php
+function redirectToHome(): void
+{
+	header('Location: index.php');
+
+	exit();
+}
+
 if  (false === isset($_POST['email'], $_POST['category'], $_POST['title'], $_POST['description'])) {
-  header('Location: /')
-  exit()
+	redirectToHome();
 }
 
 $category = $_POST['category'];
@@ -14,5 +20,4 @@ $filePath = "categories/{$category}/{$title}.txt";
 if (false === file_put_contents($filePath, "$email\n$desc")) {
 	throw new Exception('Something went wrong.');
 }
-header('Location: /')
-exit()
+redirectToHome();
