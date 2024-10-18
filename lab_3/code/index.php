@@ -18,6 +18,9 @@
         </select>
         <label for="title">Title</label>
         <input type="text" name="title" required>
+
+        <label for="description">Description</label>
+        <textarea rows="3" name="description"></textarea>
     </form>
 </body>
 </html>
