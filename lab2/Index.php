@@ -306,3 +306,7 @@ $arr = [4, 9, 16, 25, 36, 49, 64, 81];
 $res = array_map('sqrt', $arr);
 echo "<br />Массив с корнями: ";
 foreach($res as $value) echo "$value ";
+
+$ar = array_combine(range('a', 'z'), range(1, 26));
+echo "<br />Буква-номер: ";
+foreach ($ar as $letter => $num) echo "<br />$letter - $num";;
