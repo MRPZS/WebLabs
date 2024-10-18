@@ -13,9 +13,11 @@
         <input type="email" name="email" required>
         <label for="category">Category</label>
         <select name="category" required>
-            <option>Cars</option>
-            <option>Other</option>
+            <option value="cars">Cars</option>
+            <option value="other">Other</option>
         </select>
+        <label for="title">Title</label>
+        <input type="text" name="title" required>
     </form>
 </body>
 </html>
