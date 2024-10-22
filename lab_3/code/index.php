@@ -14,8 +14,13 @@
             <input type="email" name="email" required>
             <label for="category">Category</label>
             <select name="category" required>
-                <option value="cars">Cars</option>
-                <option value="other">Other</option>
+                <?php
+                $categories = array_filter(glob("./categories/*"), 'is_dir');
+                foreach ($categories as $category) {
+                    $name = basename($category);
+                    echo "<option value=\"$name\">$name</option>";
+                }
+                ?>
             </select>
             <label for="title">Title</label>
             <input type="text" name="title" required>
@@ -34,16 +39,20 @@
             <th>Description</th>
             </thead>
             <tbody>
-                <tr>
-                    <td>other</td>
-                    <td>phone</td>
-                    <td>etc</td>
-                </tr>
-                <tr>
-                    <td>carsr</td>
-                    <td>bmw</td>
-                    <td>lada</td>
-                </tr>
+                <?php
+                $files = glob("categories/*/*.txt");
+                foreach ($files as $file) {
+                    $data = file($file);
+                    $category = basename(dirname($file));
+                    $title = basename($file, ".txt");
+                    $email = $data[0];
+                    $desc = $data[1];
+                    echo "<tr>
+                    <td>$email</td><td>$category</td>
+                    <td>$title</td><td>$desc</td>
+                    </tr>";
+                }
+                ?>
             </tbody>
         </table>
     </div>
